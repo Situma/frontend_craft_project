@@ -1,0 +1,63 @@
+@import "../../variables";
+@icons-height: 80px;
+@icon-width: 60px;
+@icon-height: 60px;
+@icon-margin: calc((@icons-height - @icon-height) / 2);
+.message {
+  display: flex;
+  align-items: center;
+}
+
+img {
+  width: @icon-width;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.message-details-time {
+  font-style: italic;
+  margin-bottom: 5px;
+}
+
+.message-icons {
+  position: relative;
+  padding-right: 110px;
+  height: @icons-height;
+}
+
+.message-icon-1 {
+  margin-bottom: @icon-margin;
+  margin-top: @icon-margin;
+  position: absolute;
+  left: 10px;
+}
+
+.message-icon-2 {
+  position: absolute;
+  left: 20px;
+  margin-bottom: @icon-margin;
+  margin-top: @icon-margin;
+}
+
+.message-icon-plus {
+  position: absolute;
+  background-color: @primary-color;
+  width: @icon-width;
+  height: @icon-height;
+  border-radius: 50%;
+  left: 30px;
+  margin-bottom: @icon-margin;
+  margin-top: @icon-margin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.message-icon-plus-content {
+  font-size: 20px;
+  color: #000;
+}
+
+.message-details-message {
+  max-width: 1200px;
+}

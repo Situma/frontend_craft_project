@@ -1,0 +1,29 @@
+<header>
+  <mat-toolbar class="mat-toolbar">
+    <h1>IN TOUCH</h1>
+    <div class="drop-down-menu">
+      <button mat-button [matMenuTriggerFor]="menu"></button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item>My Profile</button>
+        <button mat-menu-item>Setting</button>
+        <button mat-menu-item>Privacy</button>
+        <button mat-menu-item>Logout</button>
+      </mat-menu>
+    </div>
+  </mat-toolbar>
+</header>
+<div class="container">
+  <app-profile></app-profile>
+  <div class="detail-container">
+    <div class="profile-details">
+      <div class="profile-component">
+        <app-personal-info></app-personal-info>
+      </div>
+      <div class="profile-component">
+        <app-socials></app-socials>
+      </div>
+    </div>
+    <app-message-list></app-message-list>
+    <app-feed-list></app-feed-list>
+  </div>
+</div>

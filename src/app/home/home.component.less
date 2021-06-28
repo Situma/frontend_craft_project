@@ -1,0 +1,53 @@
+@import "../../variables";
+
+.container {
+    display: flex;
+    padding: 50px;
+}
+
+.detail-container {
+    padding: 0 20px;
+    flex: 2;
+}
+
+.profile-details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile-component {
+    flex: 1;
+}
+
+.profile-component:first-child {
+    margin-right: 20px;
+}
+
+.mat-toolbar {
+  background-color: @primary-color;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mat-toolbar h1 {
+  color: black;
+  font-size: 35px;
+  text-align: center;
+}
+
+.drop-down-menu button{
+  background-color: #000;
+  border-radius: 50%;
+  min-width: 50px;
+  min-height: 50px;
+  width: 50px;
+  height: 50px;
+}
+
+.mat-menu-item:not(:last-child){
+  border-bottom: gray solid 1px;
+}
+
+.drop-down-menu-list {
+  padding: 0 5px;
+}

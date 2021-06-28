@@ -1,0 +1,11 @@
+<mat-card>
+  <mat-card-header>
+    <h3>Feed</h3>
+  </mat-card-header>
+  <mat-card-content>
+    <div *ngFor="let feedItem of feed; let i = index">
+      <app-feed-item [feedItem]="feedItem"></app-feed-item>
+      <mat-divider *ngIf="feed.length > i+1"></mat-divider>
+    </div>
+  </mat-card-content>
+</mat-card>

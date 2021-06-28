@@ -1,0 +1,21 @@
+<div class="feed-item">
+  <div class="feed-item-icon">
+    <mat-icon [svgIcon]="feedItem.icon"></mat-icon>
+  </div>
+  <div [ngClass]="feedItem.imagePath ? 'feed-item-content-with-image' : 'feed-item-content'">
+    <div class="">
+      <div class="feed-item-content-time">{{feedItem.time}}</div>
+      <div *ngIf="feedItem.imagePath">
+        <img [src]="feedItem.imagePath"/>
+      </div>
+    </div>
+    <div class="">
+      <div class="feed-item-content-message">
+        {{feedItem.message}}
+      </div>
+      <div *ngIf="feedItem.subtext" class="feed-item-content-subtext">
+        {{feedItem.subtext}}
+      </div>
+    </div>
+  </div>
+</div>

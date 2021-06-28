@@ -1,0 +1,17 @@
+<div class="message">
+  <div class="message-icons">
+    <div *ngIf="message.icons[0]" class="message-icon-1">
+      <img [src]="message.icons[0]"/>
+    </div>
+    <div *ngIf="message.icons[1]" class="message-icon-2">
+      <img [src]="message.icons[1]"/>
+    </div>
+    <div *ngIf="message.icons.length > 2" class="message-icon-plus">
+      <div class="message-icon-plus-content">+{{message.icons.length - 2}}</div>
+    </div>
+  </div>
+  <div class="message-details">
+    <div class="message-details-time">{{ message.time }}</div>
+    <div class="message-details-message">{{ message.message }}</div>
+  </div>
+</div>
