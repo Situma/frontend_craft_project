@@ -1,3 +1,19 @@
+# My Approach
+- I prioritized the desktop version first (This was to follow the design given without worrying about possible mobile design)
+- Design plan;
+  - [x] Add background color
+  - [x] Add colors
+  - [x] Align layout
+  - [x] Align items in each component and beautify based on design
+  - [ ] Align form items
+  - [ ] Update navbar
+  - [ ] Update Navbar dropdown
+  - [ ] Update background with gradient
+  - [ ] Make design responsive adding necessary media queries 
+  
+- I started with the main color and since it is used in different components I placed it on a variables file along with anything else being to be inherited by majority of the components
+- Since the imported material components were being used in majority of the components, it made sense to override their styles accordingly on the global style document.
+
 # Frontend Craft Project
 
 This project was designed to test your abilities to take a typical work product from a developer 
